@@ -1,5 +1,9 @@
 print("Ya Allah meri madad Farma")
 
-print(ord('A'))
+databc = "ABCDEFGHIJKLMNOPQRSTUVXYZ"
 
-print(dir(ord))
+counter = 1
+for i in databc:
+    print(f"{counter} = {i}: {ord(i)}")
+    counter = counter + 1
+
