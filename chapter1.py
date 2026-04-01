@@ -7,3 +7,4 @@ for i in databc:
     print(f"{counter} = {i}: {ord(i)}")
     counter = counter + 1
 
+# Uploaded the questioner
