@@ -13,9 +13,9 @@
 # Let's rewrite to check the largest number
 import pdb
 
-numbers = [23, 43, 54, 2, 89, 90, 44]
+# numbers = [23, 43, 54, 2, 89, 90, 44]
 
-largest = numbers[0]
+# largest = numbers[0]
 
 # for i in numbers:
 #     # breakpoint()
@@ -125,7 +125,92 @@ def get_user():
 # print(format_string % data)
 
 
-astring = "Hello world!"
-print("single quotes are ' '")
+# astring = "Hello world!"
+# print("single quotes are ' '")
+#
+# print(len(astring))
 
-print(len(astring))
+
+# astring = "Hegto worldorld!"
+# print(astring[0:9:2])
+
+
+# statement = True
+# another_statement = True
+# if statement is True:
+#     print("statements are true")
+# elif another_statement is True: # else if
+#     print("another_statements are true")
+# else:
+#     print('its all done')
+
+
+# x = [1,2,3]
+# y = [1,2,3]
+# print(x == y) # Prints out True
+# print(x is y) # Prints out False
+
+# x = [1, 2, 3]
+# y = [1, 2, 3]
+#
+# print(id(x))
+# print(id(y))
+
+#
+# print(not False) # Prints out True
+# print((not False) == (False)) # Prints out False
+
+
+# change this code
+# number = 10
+# second_number = 10
+# first_array = []
+# second_array = [1,2,3]
+#
+# if number > 15:
+#     print("1")
+#
+# if first_array:
+#     print("2")
+#
+# if len(second_array) == 3:
+#     print("3")
+#
+# if len(first_array) + len(second_array) == 3:
+#     print("4")
+#
+# if first_array and first_array[0] == 1:
+#     print("5")
+#
+# if not second_number:
+#     print("6")
+
+
+#
+# numbers = [23, 43, 54, 2, 89, 90, 44]
+#
+# for prime in numbers:
+#     print(prime)
+
+
+# Prints out the numbers 0,1,2,3,4
+# for x in range(5):
+#     print(x)
+# print("NOw")
+# # Prints out 3,4,5
+# for x in range(3, 6):
+#     print(x, end=' ')
+#
+# print("then")
+# # Prints out 3,5,7
+# for x in range(3, 8, 2):
+#     print(x, end=" ")
+
+# print("Hello", "how are you?", sep="---")
+
+
+
+count = 0
+while count < 5:
+    print(count, end=" ")
+    count += 1
