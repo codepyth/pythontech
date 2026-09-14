@@ -210,7 +210,120 @@ def get_user():
 
 
 
-count = 0
-while count < 5:
-    print(count, end=" ")
-    count += 1
+# count = 0
+# while count < 5:
+#     print(count, end=" ")
+#     count += 1
+
+
+
+# def flates_are():
+#     print("This is First floor in this Flat")
+#
+# flates_are()
+
+
+# def sum_two_numbers(a, b):
+#     return a + b
+#
+#
+# print(sum_two_numbers(34, 76))
+
+
+# Modify this function to return a list of strings as defined above
+# def list_benefits():
+#     return ['convenient', 'reliable', 'smooth', 'usable']
+#
+# # Modify this function to concatenate to each benefit - " is a benefit of functions!"
+# def build_sentence(benefit):
+#     return f"list is very {benefit}"
+#
+# def name_the_benefits_of_functions():
+#     list_of_benefits = list_benefits()
+#     for benefit in list_of_benefits:
+#         print(build_sentence(benefit))
+
+# name_the_benefits_of_functions()
+
+
+
+# class MyClass:
+#     vab = "blah"
+#
+#     def myfunction(self):
+#         vab = "chachu"
+#         print(f"This is a message inside the class", self.vab)
+#
+# myobjectx = MyClass()
+#
+# myobjectx.myfunction()
+
+
+# class MyClass:
+#     variable = "blah"
+#
+#     def function(self=None):
+#         variable = 'i am variable from function'
+#         print("This is a message inside the class.", self.variable)
+#         print("This is a message inside the class.", variable)
+#
+# myobjectx = MyClass()
+#
+# myobjectx.function()
+
+
+# phonebook = {}
+# phonebook["John"] = 938477566
+# phonebook["Jack"] = 938377264
+# phonebook["Jill"] = 947662781
+# print(phonebook)
+
+
+# phonebook = {"josi": 2341, "kon": 5431, "Same": 765 }
+
+# del phonebook["josi"]
+# print(phonebook)
+# phonebook.pop("Same")
+# print(phonebook)
+# for name , number in phonebook.items():
+#     print('Phone number of %s is %d' % (name, number))
+
+
+phonebook = {
+    "John": "32",
+    "Jake": 938377264,
+    "Jill": "32"
+}
+# your code goes here
+
+# testing code
+# print(phonebook.values())
+# if "32" in phonebook.values():
+#     print("Jake is listed in the phonebook.")
+
+
+
+# game.py
+# import the draw module
+# import draw
+#
+# def play_game():
+#     return "I am playing"
+#
+# def main():
+#     result = play_game()
+#     draw.draw_game(result)
+#
+# # this means that if this script is executed, then
+# # main() will be executed
+# if __name__ == '__main__':
+#     main()
+
+
+def surface_area_of_cube(data: float) -> int:
+    return 6 * data ** 2
+
+
+result = surface_area_of_cube(data = 4.6)
+
+print(result)
