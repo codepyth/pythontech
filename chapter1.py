@@ -289,11 +289,11 @@ def get_user():
 #     print('Phone number of %s is %d' % (name, number))
 
 
-phonebook = {
-    "John": "32",
-    "Jake": 938377264,
-    "Jill": "32"
-}
+# phonebook = {
+#     "John": "32",
+#     "Jake": 938377264,
+#     "Jill": "32"
+# }
 # your code goes here
 
 # testing code
@@ -320,10 +320,254 @@ phonebook = {
 #     main()
 
 
-def surface_area_of_cube(data: float) -> int:
-    return 6 * data ** 2
+# def surface_area_of_cube(data: float) -> int:
+#     return 6 * data ** 2
+#
+#
+# result = surface_area_of_cube(data = 4.6)
+#
+# print(result)
 
 
-result = surface_area_of_cube(data = 4.6)
 
-print(result)
+# from dataclasses import dataclass
+#
+# @dataclass
+# class User:
+#     name: str
+#     age: int
+#     email: str
+#
+#
+# user = User("Haseem", 30, "waseem@example.com")
+#
+# print(user.name)
+# print(user.age)
+# print(user)
+
+
+# class Car:
+#     def __init__(self, name, price, email):
+#         self.name = name
+#         self.price = price
+#         self.email = email
+
+
+
+# from dataclasses import dataclass
+#
+# @dataclass
+# class Vehicle:
+#     name : str
+#     price : float
+#     email : str
+#
+# obj = Vehicle("Waseem", 30, "waseem@example.com")
+# print(obj)
+# print(obj.name)
+
+# thislist = ["apple", "banana", "cherry"]
+# print(len(thislist))
+
+# list1 = ["apple", "banana", "cherry"]
+# list2 = [1, 5, 7, 9, 3]
+# list3 = [True, False, False]
+#
+# print(len(list1), " ", list2, " ", list3)
+
+
+# thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+# thislist = ["apples", "banana", "cherry"]
+# print(thislist)
+
+
+# thislist = ["apple", "banana", "cherry"]
+# print(thislist[-1])
+
+
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+
+# print(thislist[2:])
+
+
+# thislist = ["apple", "banana", "cherry"]
+# if "apple" in thislist:
+#   print("Yes, 'apple' is in the fruits list")
+
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist[1:2] = ["watermelon"]
+# print(thislist)
+
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.append("orange")
+# print(thislist)
+
+
+# thislist = ["apple", "banana", "cherry"]
+# tropical = ["mango", "pineapple", "papaya"]
+# thislist.extend(tropical)
+# print(thislist)
+
+
+# thislist = ["apple", "banana", "cherry"]
+# thistuple = ("kiwi", "orange")
+# print(type(thistuple))
+# thislist.extend(thistuple)
+# print(type(thislist))
+
+
+# thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+# thislist.pop(2)
+# print(thislist)
+
+
+# thislist = ["apple", "banana", "cherry"]
+# i = 0
+# print(range(len(thislist)))
+# while i < len(thislist):
+#   print(thislist[i])
+#   i = i + 1
+
+
+# thislist = ["apple", "banana", "cherry"]
+# [print(x) for x in thislist]
+
+
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+#
+# parinto = [hu for hu in fruits if "an" in hu]
+#
+# print(parinto)
+
+# newlist = [x for x in range(10)]
+# print(range(10))
+# print(newlist)
+
+#
+# numbers = [5, 2, 8, 1, 3]
+#
+# for i in range(len(numbers)):
+#     for j in range(len(numbers) - 1 - i):
+#         if numbers[j] > numbers[j + 1]:
+#             numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+#
+# print(numbers)
+
+
+# numbers = [5, 2]
+#
+# j = 0
+#
+# numbers[j]     = 5
+# print(numbers)
+# numbers[j + 1] = 2
+#
+# print(numbers)
+
+
+
+original = ["apple", "banana", "cherry"]
+
+new_list = original.copy()
+
+# print(new_list)
+
+# print(object(original))
+
+
+import copy
+
+# original = [[1, 3], [7, 4]]
+#
+# shallow = copy.copy(original)
+#
+# shallow[0][0] = 100
+# print("Shallow: ", original)
+#
+#
+#
+# deep = copy.deepcopy(original)
+#
+# deep[0][0] = 100
+
+# print("Deep: ", deep)
+
+
+
+# import copy
+#
+# original = [[1, 3], [7, 4]]
+#
+# shallow = copy.copy(original)
+# deep = copy.deepcopy(original)
+#
+# shallow[0][0] = 100
+# deep[0][0] = 200
+
+# print("Original:", original)
+# print("Shallow:", shallow)
+# print("Deep:", deep)
+#
+#
+# import copy
+#
+# original = [[1, 3], [7, 4]]
+#
+# shallow = copy.copy(original)
+# deep = copy.deepcopy(original)
+#
+# print(id(original))
+# print(id(shallow))
+# print(id(deep))
+
+
+
+import copy
+#
+# original = [[1, 3], [7, 4]]
+#
+# shallow = copy.copy(original)
+# deep = copy.deepcopy(original)
+#
+# print("shallow: ", shallow, "deep: ", deep)
+# print(original is shallow)       # False
+# print(original[0] is shallow[0]) # True
+#
+# print(original is deep)          # False
+# print(original[0] is deep[0])    # False
+
+
+
+# import copy
+#
+# original = [[1, 2], [3, 4]]
+#
+# shallow = copy.copy(original)
+# shallow[0].append(99)
+# print(original)   # [[1, 2, 99], [3, 4]]  ← changed too!
+#
+# original2 = [[1, 2], [3, 4]]
+#
+# deeper = copy.deepcopy(original2)
+# deeper[0].append(99)
+# print(original2)   # [[1, 2, 99], [3, 4]]  ← changed too!
+
+
+
+# car = {
+# "brand": "Ford",
+# "model": "Mustang",
+# "year": 1964
+# }
+#
+#
+# a = car.items()
+# print("items: ", a)
+#
+# c = car.values()
+# print("values: ", c)
+#
+# f = car.keys()
+# print("keys: ", f)
