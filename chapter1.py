@@ -571,3 +571,53 @@ import copy
 #
 # f = car.keys()
 # print("keys: ", f)
+
+
+# from functools import wraps
+# import time
+#
+#
+# def timeit(func):
+#     @wraps(func)
+#     def timeit_wrapper(*arg, **kwargs):
+#         start_time = time.perf_counter()
+#         result = func(*arg, **kwargs)
+#         print("Result: ", result)
+#         end_time = time.perf_counter()
+#
+#         total_time = end_time - start_time
+#         return  result
+#     return timeit_wrapper
+#
+#
+# @timeit
+# def calculate_something(num):
+#     total = sum((x for x in range(0, num**2)))
+#     return total
+#
+#
+# if __name__ == '__main__':
+#     calculate_something(10)
+
+
+
+
+# def retry(thisone):
+#     def wrapper(*args, **kwargs):
+#         for attemp in range(1,4):
+#             try:
+#                 print("Try no: ", attemp)
+#                 result = thisone(*args, **kwargs)
+#                 return result
+#             except Exception as e:
+#                 print("Failed : ", attemp)
+#
+#         print("All 3 attempts failed")
+#     return wrapper
+#
+# @retry
+# def calculator(a, b):
+#     print("sum: ", a*b)
+
+
+# so = calculator(3,2)
