@@ -659,23 +659,87 @@ import copy
 
 
 
-def normal():
-    print("Creating list...")
-    return [1, 2, 3]
+# def normal():
+#     print("Creating list...")
+#     return [1, 2, 3]
+#
+#
+# def generator():
+#     print("Starting generator...")
+#     yield 1
+#     yield 2
+#     yield 3
+#
+#
+# print("NORMAL:")
+# x = normal()
+# print(x)
+#
+# print("GENERATOR:")
+# y = generator()
+# print(next(y))
+# print("Done")
 
 
-def generator():
-    print("Starting generator...")
-    yield 1
-    yield 2
-    yield 3
+#
+# def paginate(items, page_size):
+#     for i in range(0, len(items), page_size):
+#         yield items[i:i + page_size]
+#
+#
+#
+# users = [
+#     "Ali", "Ahmed", "Waseem", "John", "David",
+#     "Sara", "Maria", "James", "Tom", "Bilal",
+#     "Usman", "Adam"
+# ]
+#
+# for page in paginate(users, 5):
+#     print(page)
 
 
-print("NORMAL:")
-x = normal()
-print(x)
 
-print("GENERATOR:")
-y = generator()
-print(next(y))
-print("Done")
+
+# def add(*args):
+#     print(args)
+#
+#
+# add(3, 4)
+
+
+# def log_arguments(*args, **kwargs):
+#     print("Positional arguments:", args)
+#     print("Keyword arguments:", kwargs)
+#
+#
+# log_arguments(10, 20, 30, name="Waseem", country="UK")
+
+#
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+#
+# newlist = [x for x in fruits if 'r' in x]
+#
+# print(newlist)
+
+
+#
+# class InsufficientFundsError(Exception):
+#     pass
+#
+#
+# def withdraw_money(balance, amount):
+#
+#     if amount > balance:
+#         raise InsufficientFundsError(
+#             "Insufficient funds for this withdrawal."
+#         )
+#
+#     return balance - amount
+#
+# try:
+#     amount = int(input("Enter amount: "))
+#     balance = withdraw_money(100, amount)
+#     print("Remaining balance:", balance)
+#
+# except InsufficientFundsError as error:
+#     print("Transaction failed:", error)
