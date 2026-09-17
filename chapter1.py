@@ -636,3 +636,46 @@ import copy
 # with MyContext():
 #     print("Hello from inside")
 
+
+#
+# def count_to_five():
+#     yield 1
+#     yield 2
+#     yield 3
+#     yield 4
+#
+#
+# for number in count_to_five():
+#     print(number)
+#
+# print("Now simple List...")
+#
+# def count_in_gisto():
+#     return [1,2,3,4]
+#
+#
+# for gist in count_in_gisto():
+#     print(gist)
+
+
+
+def normal():
+    print("Creating list...")
+    return [1, 2, 3]
+
+
+def generator():
+    print("Starting generator...")
+    yield 1
+    yield 2
+    yield 3
+
+
+print("NORMAL:")
+x = normal()
+print(x)
+
+print("GENERATOR:")
+y = generator()
+print(next(y))
+print("Done")
