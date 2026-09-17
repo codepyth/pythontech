@@ -621,3 +621,18 @@ import copy
 
 
 # so = calculator(3,2)
+
+# Context Managers will go here.
+
+# class MyContext:
+#
+#     def __enter__(self):
+#         print("Entering context")
+#
+#     def __exit__(self, exc_type, exc_value, traceback):
+#         print("Exiting context")
+#
+#
+# with MyContext():
+#     print("Hello from inside")
+
