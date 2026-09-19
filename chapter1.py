@@ -747,28 +747,38 @@ import copy
 
 
 
-class MyContext:
-    request = 0
+# class MyContext:
+#     request = 0
+#
+#     def __enter__(self):
+#         if self.request < 3:
+#             self.request += 1
+#             print("Entering context")
+#         else:
+#             raise RateLimitExceededError("Limit reached")
+#
+#     def __exit__(self, exc_type, exc_value, traceback):
+#         print("Exiting context")
+#
+#
+# class RateLimitExceededError(Exception):
+#     pass
+#
+# with MyContext():
+#     print("Hello from inside")
+#
+# context = MyContext()
+#
+# for i in range(4):
+#     with context:
+#         print("Hello from inside")
 
-    def __enter__(self):
-        if self.request < 3:
-            self.request += 1
-            print("Entering context")
-        else:
-            raise RateLimitExceededError("Limit reached")
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        print("Exiting context")
 
 
-class RateLimitExceededError(Exception):
-    pass
 
-with MyContext():
-    print("Hello from inside")
+import requests
 
-context = MyContext()
-
-for i in range(4):
-    with context:
-        print("Hello from inside")
+try:
+    response = requests.get("http://example.com")
+except requests.ConnectionError as e:
+    print(f"Network error: {e}")
