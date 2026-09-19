@@ -12,6 +12,7 @@
 
 # Let's rewrite to check the largest number
 import pdb
+from logging import raiseExceptions
 
 # numbers = [23, 43, 54, 2, 89, 90, 44]
 
@@ -743,3 +744,31 @@ import copy
 #
 # except InsufficientFundsError as error:
 #     print("Transaction failed:", error)
+
+
+
+class MyContext:
+    request = 0
+
+    def __enter__(self):
+        if self.request < 3:
+            self.request += 1
+            print("Entering context")
+        else:
+            raise RateLimitExceededError("Limit reached")
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Exiting context")
+
+
+class RateLimitExceededError(Exception):
+    pass
+
+with MyContext():
+    print("Hello from inside")
+
+context = MyContext()
+
+for i in range(4):
+    with context:
+        print("Hello from inside")
