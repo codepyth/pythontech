@@ -776,9 +776,11 @@ import copy
 
 
 
-import requests
+# import requests
 
-try:
-    response = requests.get("http://example.com")
-except requests.ConnectionError as e:
-    print(f"Network error: {e}")
+# try:
+#     response = requests.get("http://google.com")
+#     print(f"This is what: ", response)
+#     print("It's working...")
+# except requests.ConnectionError as e:
+#     print(f"Network error: {e}")
